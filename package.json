@@ -1,0 +1,27 @@
+{
+	"name": "web-conferencing",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node dist/server",
+		"dev:build": "tsc -w",
+		"dev:run": "nodemon dist/server",
+		"dev": "concurrently npm:dev:*"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"ejs": "^3.1.5",
+		"express": "^4.17.1",
+		"socket.io": "^3.0.4",
+		"uuid": "^8.3.2"
+	},
+	"devDependencies": {
+		"@types/express": "^4.17.9",
+		"@types/uuid": "^8.3.0",
+		"concurrently": "^5.3.0",
+		"nodemon": "^2.0.6"
+	}
+}
